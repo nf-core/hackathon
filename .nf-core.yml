@@ -1,0 +1,37 @@
+lint:
+  files_exist:
+  - conf/igenomes.config
+  - conf/igenomes_ignored.config
+  - assets/multiqc_config.yml
+  - nextflow_schema.json
+  - conf/igenomes.config
+  - conf/igenomes_ignored.config
+  - assets/multiqc_config.yml
+  - nextflow_schema.json
+  files_unchanged:
+  - .github/CONTRIBUTING.md
+  - assets/sendmail_template.txt
+  - .github/CONTRIBUTING.md
+  - assets/sendmail_template.txt
+  multiqc_config: false
+  nextflow_config: false
+  schema_description: false
+  schema_lint: false
+  schema_params: false
+nf_core_version: 3.0.3.dev0
+repository_type: pipeline
+template:
+  author: "Matthias H\xF6rtenhuber"
+  description: All about the nf-core hackathon
+  force: true
+  is_nfcore: true
+  name: hackathon
+  org: nf-core
+  outdir: .
+  skip_features:
+  - igenomes
+  - multiqc
+  - fastqc
+  - nf_schema
+  version: 1.0.0dev
+update: null
